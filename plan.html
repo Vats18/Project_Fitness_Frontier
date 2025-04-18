@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Generator</title>
+    <style>
+        body {
+            background-image: url(bkplan.avif);
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .nav {
+            background-color: rgba(117, 46, 4, 0.733);
+            height: 130px;
+            gap: auto;
+            display: flex;
+            overflow: hidden;
+            width: 3000px;
+            margin-top: -160px;
+            margin-left: -10px;
+            position: fixed;
+            font-family: Arial, sans-serif;
+            font-size: 30px;
+        }
+
+        .nav ul {
+            display: flex;
+            gap: 20px;
+            padding-top: 30px;
+            list-style: none;
+            color: white;
+        }
+
+        ul li a {
+            text-decoration: none;
+            justify-content: center;
+            font-size: 30px;
+            color: rgb(255, 255, 255);
+
+        }
+
+        fieldset {
+            margin-left: 20%;
+            border-radius: 25px;
+            width: 60%;
+        }
+
+        .t1 {
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .plan {
+            height: auto;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        label {
+            font-size: x-large;
+        }
+
+        #goals {
+            width: 100%;
+            height: 50px;
+            padding-left: 30px;
+            font-size: 120%;
+            border-radius: 30px;
+        }
+
+        .type {
+            width: 100%;
+            height: 50px;
+            padding-left: 30px;
+            font-size: 120%;
+            border-radius: 30px;
+        }
+
+        .plan-btn {
+            width: 70%;
+            height: 50px;
+            font-size: 120%;
+            border-radius: 30px;
+            margin-left: 15%;
+            cursor: pointer;
+        }
+
+        .details {
+            border-radius: 25px;
+            background-color: rgba(117, 46, 4, 0.733);
+            color: aliceblue;
+            padding: 2%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            word-spacing: 10px;
+            text-align: center;
+            margin-left: 20%;
+            width: 60%;
+        }
+
+        #t {
+            font-size: 50px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #d {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="fitness.html">
+            <img src="logo2.png" style="width: 250px; margin-top: 5px;" height="125px">
+        </a>
+        <ul>
+            <li><a href="fitness.html">Home</a></li> |
+            <li><a href="login.html">Login</a></li> |
+            <li><a href="plan.html">Workout Plan Generator</a></li> |
+            <li><a href="exercise.html">Exercise Demo</a></li> |
+            <li><a href="plan.html">Diet Plans</a></li> |
+            <li><a href="contactform.html">Contact Form</a></li>
+        </ul>
+    </div>
+
+    <h1 style="text-align: center; font-size: 50px; color:white; margin-top: 160px;">Fitness Plan Generator
+    </h1>
+    <fieldset>
+        <legend>
+            <h2 class="t1">Workout Plan Generator</h2>
+        </legend>
+        <section class="plan">
+
+            <form class="plan-form">
+                <label for="goals">Your Goal</label>
+                <br><br>
+                <select id="goals" name="goals">
+                    <option value="" disabled selected>Choose Your Goal</option>
+                    <option value="option1">General Fitness Goals</option>
+                    <option value="option2">Strength Goals</option>
+                    <option value="option3">Weight Loss / Fat Loss Goals</option>
+                    <option value="option4">Flexibility & Mobility Goals</option>
+                    <option value="option5">Mental & Habitual Goals</option>
+                </select>
+                <br><br>
+                <label for="type"> Your Type</label>
+                <br><br>
+                <select class="type" name="type">
+                    <option value="opt1">Beginner</option>
+                    <option value="opt2">Intermediate</option>
+                    <option value="opt3">Advanced</option>
+                </select>
+                <br><br><br>
+            </form>
+            <a href="diet.html">
+                <button type="submit" class="plan-btn">Generate Plan</button>
+            </a>
+            <br><br>
+        </section>
+    </fieldset>
+    <br><br><br>
+    <div class="details">
+        <h1 id="t">
+            General Fitness Goals
+        </h1>
+        <p id="d">
+            Workout 4-5 times a week consistently.
+            <br><br>
+            Improve cardiovascular endurance (run 5K/10K, cycle 20km, etc.).
+            <br><br>
+            Hold a plank for 2+ minutes.
+        </p>
+        <br>
+        <h1 id="t">
+            Strength Goals
+        </h1>
+        <p id="d">
+            Increase overall strength (e.g., deadlift your bodyweight or more).
+            <BR><br>
+            Master push-ups, pull-ups, and dips.
+            <br><br>
+            Build muscle mass and tone (track progress with measurements/photos).
+        </p>
+        <br>
+        <h1 id="t">
+            Weight Loss / Fat Loss Goals
+        </h1>
+        <p id="d">
+            Lose 5-10 kg in 3 months (safely).
+            <br><br>
+            Drop body fat percentage (e.g., from 30% to 20%).
+            <br><br>
+            Fit into a target outfit/clothing size.
+        </p>
+        <br>
+        <h1 id="t">
+            Flexibility & Mobility Goals
+        </h1>
+        <p id="d">
+            Touch your toes or perform splits.
+            <br><br>
+            Improve posture and reduce stiffness.
+            <br><br>
+            Incorporate yoga/mobility sessions weekly.
+        </p>
+        <br>
+        <h1 id="t">
+            Mental & Habitual Goals
+        </h1>
+        <p id="d">
+
+            Develop a morning workout habit.
+            <br><br>
+            Track workouts & meals daily.
+            <br><br>
+            Prioritize sleep and recovery
+        </p>
+    </div>
+</body>
+
+</html>

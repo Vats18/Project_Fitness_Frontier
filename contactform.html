@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Trainer Contact Form</title>
+  <style>
+    body {
+      background-image: url(trainbk.jpg);
+      background-size: cover;
+      background-position: center center;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .contact-form {
+      background: #7b7474bc;
+      border-radius: 25px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      width: 450px;
+      padding: 20px;
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      margin-left: 10px;
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .contact-form button {
+      margin-left: 10px;
+      width: 95%;
+      padding: 10px;
+      background: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form class="contact-form">
+    <h2>Contact Your Trainer</h2>
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <textarea rows="4" placeholder="Your Fitness Goals or Questions" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+</body>
+
+</html>
